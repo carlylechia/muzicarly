@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzicarly</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<div id="background">
+    <img class="background_stretch" src="https://media.istockphoto.com/photos/cheering-crowd-of-unrecognized-people-at-a-rock-music-concert-concert-picture-id1189205501?k=20&m=1189205501&s=612x612&w=0&h=fexl_Cmu6AdLatIasGg_XYTkLSeWHCtvhMw1nK5_uDc=" alt="a happy musical audience">
+</div>
+<div id="background_right">
+    <img class="background_stretch_right" src="https://img.jakpost.net/c/2019/06/12/2019_06_12_74202_1560308728._large.jpg" alt="Musician doing what he does best"
+</div>
+<nav id="navbar">
+    <header>
+        <h1>MUZICARLY</h1>
+        <img src="./LogoMakr-5n24Tj.png"/>
+    </header>
+    <ul>
+        <li><a class="nav-link"href="#vocals">Vocals</a></li>
+        <li><a class="nav-link"href="#instrumentals">Instrumentals</a></li>
+        <li><a class="nav-link"href="#chorals">Chorals</a></li>
+        <li><a class="nav-link"href="#choreo">Choreo</a></li>
+        <li><a class="nav-link"href="#bars">Rap</a></li>
+        <li><a class="nav-link"href="#AboutMe">About Me</a></li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="vocals"><header>VOCALS</header>
+        <p>
+            <code>Hello dear Vocalist</code>
+        </p>
+        <p>
+            <ul>
+                <li>Anyone who can speak can be a vocalist.</li>
+                <li>Here's what it takes to be a good vocalist:</li>
+                    <ul>
+                        <li>Does vocal drills regularly</li>
+                        <li>Warms up their vocal chords before singing</li>
+                        <li>Respect their voices and do not shout carelessly</li>
+                    </ul>
+                <li>Join us to know more!</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+
+    <section class="main-section" id="instrumentals"><header>INSTRUMENTALS</header>
+        <p>
+            <code>Hello dear Instrumentalist</code>
+        </p>
+        <p>
+            <ul>
+                <li>Anyone who can appreciate music can be an instrumentalist.</li>
+                <li>Here's what it takes to be a good instrumentalist:</li>
+                    <ul>
+                        <li>Know the basic theory of music</li>
+                        <li>Have a good ear for music</li>
+                        <li>know how to combine sounds</li>
+                    </ul>
+                <li>Join us to know more!</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+
+    <section class="main-section" id="chorals"><header>CHORALS</header>
+        <p>
+            <code>Hello dear Chorister</code>
+        </p>
+        <p>
+            <ul>
+                <li>Anyone who can sing can be a chorister.</li>
+                <li>Here's what it takes to be a good chorister:</li>
+                    <ul>
+                        <li>Can sing in the midst of others</li>
+                        <li>Can blend well with others</li>
+                        <li>Can be a team player (singer)</li>
+                    </ul>
+                <li>Join us to know more!</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+
+    <section class="main-section" id="choreo"><header>CHOREO</header>
+        <p>
+            <code>Hello dear Dancer</code>
+        </p>
+        <p>
+            <ul>
+                <li>Anyone who can walk can be a dancer.</li>
+                <li>Here's what it takes to be a good dancer:</li>
+                    <ul>
+                        <li>Understands body language</li>
+                        <li>Can interprete basic sound tempo of music</li>
+                        <li>Can be flexible and fit</li>
+                    </ul>
+                <li>Join us to know more!</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+
+    <section class="main-section" id="bars"><header>BARS & RAP</header>
+        <p>
+            <code>Hello dear Rapper</code>
+        </p>
+        <p>
+            <ul>
+                <li>Anyone who can speak can be a rapper.</li>
+                <li>Here's what it takes to be a good rappert:</li>
+                    <ul>
+                        <li>Has a good mastery of the language</li>
+                        <li>Constantly practices and freestyles</li>
+                        <li>Understands beats and transtions</li>
+                    </ul>
+                <li>Join us to know more!</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+
+</main>
+<style>
+body {
+    font-family: 'nunito';
+    color: white;
+    background-color: black;
+    line-height: 1.4;
+    width: 100%;
+}
+#background {
+  position: absolute;
+  height: auto;
+  width: 100%;
+
+  left: 300px;
+  top: 0px;
+  z-index: -1;
+}
+.background_stretch {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+#background_right {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.background_stretch_right {
+  width: 75%;
+  height: auto;
+  opacity: 0.75;
+}
+
+.header_text {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 50px;
+
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 18vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+.header_title {
+  grid-row: 1;
+  grid-column: 1;
+
+  text-align: right;
+  font-size: 20px;
+  color: silver;
+
+  z-index: 2;
+}
+
+.header_quote {
+  grid-row: 1;
+  grid-column: 2;
+
+  font-size: 15px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    max-height: 200px;
+    max-width: 200px;
+    width: 200px;
+
+    top: 0px;
+    left: 0px;
+
+    color: black;
+    background-color: rgb(6, 5, 78);
+    padding: 75px 0px;
+
+    z-index: 1;
+  }
+  #main-doc {
+    position: relative;
+    margin-top: 340px;
+    margin-left: 0px;
+  }
+}
+</style>
+</html>

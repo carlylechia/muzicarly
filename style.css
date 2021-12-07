@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  font-family: "nunito";
+  color: white;
+  background-color: black;
+  line-height: 1.4;
+  width: 100%;
+}
+#background {
+  position: absolute;
+  height: auto;
+  width: 100%;
+
+  left: 300px;
+  top: 0px;
+  z-index: -1;
+}
+.background_stretch {
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+#background_right {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.background_stretch_right {
+  width: 75%;
+  height: auto;
+  opacity: 0.75;
+}
+
+.header_text {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 50px;
+
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  top: 18vw;
+  left: 0vw;
+  z-index: 2;
+}
+
+.header_title {
+  grid-row: 1;
+  grid-column: 1;
+
+  text-align: right;
+  font-size: 20px;
+  color: silver;
+
+  z-index: 2;
+}
+
+.header_quote {
+  grid-row: 1;
+  grid-column: 2;
+
+  font-size: 15px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+  #navbar {
+    position: absolute;
+    max-height: 200px;
+    max-width: 200px;
+    width: 200px;
+
+    top: 0px;
+    left: 0px;
+
+    color: black;
+    background-color: rgb(6, 5, 78);
+    padding: 75px 0px;
+
+    z-index: 1;
+  }
+  #main-doc {
+    position: relative;
+    margin-top: 340px;
+    margin-left: 0px;
+  }
+}
